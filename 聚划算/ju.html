@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0"/>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		list-style:none;
+		text-decoration:none;
+		font-family: '微软雅黑';
+		text-decoration: none;
+		vertical-align:top;
+	}
+	.clearfix:after{
+	 display:block; content:''; 
+	 clear:both;
+	}
+	.banner{
+	 width:100%;
+	 height:6.7rem ;
+	 overflow:hidden;
+	 display:block;
+	}
+	.banner1{ 
+		width:500%;
+		overflow:hidden;
+		-webkit-transform:translate3d(-16rem,0,0);
+	}
+	.banner1 li{
+	 float:left; 
+	 width:calc(100%/5);
+	}
+	span{
+		display: block;
+	}
+	header{
+		width:16rem;
+		height: 2.35rem;
+		background:-webkit-linear-gradient(#fff,#ececec);
+		display: -webkit-box;
+		-webkit-box-pack: center;
+		-webkit-box-align: center;
+		position: relative;
+
+	}
+	header a{
+		background:url(img/1.png) no-repeat;
+		display: block;
+		width: 2.95rem;
+		height: 1.35rem;
+		background-size: 2.95rem 1.35rem;
+		position: absolute;
+		left:0.5rem;
+		top:0.4rem;
+	}
+	header h1{
+		width: 3.7rem;
+		height: 1rem;
+		background: url(img/91.png) no-repeat;
+		background-size:3.7rem 1rem;
+	}
+	.banner img{
+		width: 16rem;
+		height: 6.7rem;
+	}
+	.ul1{
+		display: -webkit-box;
+		-webkit-box-align: center;
+		-webkit-box-pack: center;
+		margin-top:0.5rem;
+	}
+	.ul1 li{
+		width:0.25rem;
+		height: 0.25rem;
+		background:#ccc;
+		border-radius: 50%;
+		margin-left:0.25rem;
+
+	}
+	.active{
+		background:#ff4300 !important;
+	}
+	.pic{
+		margin: 0 0.4rem;
+		overflow: hidden;
+	}
+	.pic p{
+		font-size:0.6rem;
+	}
+	.pic a{
+		text-decoration:none;
+		color: #999;
+	}
+	.pic li{
+	 width:25%; 
+	 float:left; 
+	 text-align:center; 
+	 margin-top:1rem;
+	}
+.icon {
+	width: 2rem;
+	height: 2rem;
+	background-size: 100%;
+	display: inline-block;
+	margin-bottom: 0.4rem;
+	vertical-align: top;
+	background-repeat: no-repeat;
+	}
+.icon1
+ 	{
+	background-image: url(img/icon1.png);
+	}
+.icon2 
+	{
+	background-image: url(img/icon2.png);
+	}
+.icon3 
+	{
+	background-image: url(img/icon3.png);
+	}
+.icon4
+ 	{
+	background-image: url(img/icon4.png);
+	}
+.icon5
+	 {
+	background-image: url(img/icon5.png);
+	}
+.icon6 
+	{
+	background-image: url(img/icon6.png);
+	}
+.icon7 
+	{
+	background-image: url(img/icon7.png);
+	}
+.icon8 
+	{
+	background-image: url(img/icon8.png);
+	}
+	.total{
+		width: 15.5rem;
+		margin-left:0.45rem;
+	}
+	.total h3{
+		margin-top:2rem;
+		border-left:2px solid #d51938;
+		padding-left:0.45rem;
+		font-size: 0.7rem;
+		float: left;
+	}
+	.gar{
+		overflow: hidden;
+		border-bottom: 2px solid #dcdcdc;
+		padding-bottom: 0.55rem;
+		margin-bottom: 1rem;
+		margin-right:0.45rem;
+	}
+	.gar a{
+		margin-top:1.7rem;
+		display: block;
+		float: right;
+		font-size: 1rem;
+		color: #000;
+	}
+	.picc{
+		width: 15.5rem;
+		height: 3rem;
+		margin-bottom: 0.5rem;
+	}
+	.picc .num{
+		width: 1.5rem;
+		height: 3rem;
+		background:#e00202;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc .num2{
+		width: 1.5rem;
+		height: 3rem;
+		background:#ff4800;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc .num3{
+		width: 1.5rem;
+		height: 3rem;
+		background:#ff7300;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc .num4{
+		width: 1.5rem;
+		height: 3rem;
+		background:#ff9d00;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc .num5{
+		width: 1.5rem;
+		height: 3rem;
+		background:#ffa800;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc .num6{
+		width: 1.5rem;
+		height: 3rem;
+		background:#ffb400;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc .num7{
+		width: 1.5rem;
+		height: 3rem;
+		background:#ffba00;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc .num8{
+		width: 1.5rem;
+		height: 3rem;
+		background:#fcd000;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc .num9{
+		width: 1.5rem;
+		height: 3rem;
+		background:#ffd719;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc .num10{
+		width: 1.5rem;
+		height: 3rem;
+		background:#ffe152;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 3.05rem;
+		color: #fff;
+		float:left;
+	}
+	.picc img{
+		width:4.5rem;
+		height: 3rem;
+		float:left;
+		overflow: hidden;
+	}
+	.price{
+		width:9.05rem;
+		height: 3rem;
+		
+		float:left;
+		background: url(img/tu.png) no-repeat 8rem 0.9rem #f4f4f4;
+
+	}
+	.price .sell{
+		font-size: 0.6rem;
+		color: #999999;
+		margin-top:0.5rem;
+		margin-left:0.55rem;
+	}
+	.price .sell1{
+		margin-left:0.55rem;
+		width: 3.6rem;
+	}
+	.price i{
+		font-size: 0.6rem;
+		color: #999999;		
+	}
+	.price .sell2{
+		font-size: 1rem;
+		color: #d51938;
+		float: right;
+		margin-top:-1.8rem;
+		margin-right: 1.5rem;
+
+	}
+	.price  .lose{
+		color: #c7223d;
+	}
+	.lose1{
+		text-decoration:line-through;
+	}
+	.spl{
+		width: 15.2rem;
+		height: 2rem;
+		background: #f5f5f5;
+		color: #666;
+		text-align: center;
+		line-height: 2rem;
+		font-size: 0.7rem;
+		margin-top:0.5rem;
+	}
+	.wares{
+		width: 15.2rem;
+		height: 8.85rem;
+		overflow: hidden;
+		margin-top:0.5rem;
+		border-bottom:0.5rem;
+	}
+	.wares img{
+		width:3.2rem;
+		height: 8.85rem;
+		float: left;
+	}
+	.wares ul{
+		width: 12rem;
+		height: 8.85rem;
+		float: left;
+		border-top:1px solid #ccc;
+		
+	}
+	.wares ul li{
+		width: 4rem;
+		height: 2.2rem;
+		float: left;
+		border-bottom:1px solid #ccc;
+		box-sizing:border-box;
+		text-align: center;
+		line-height: 2.2125rem;
+		font-size: 0.7rem;
+		border-right:1px solid #ccc;
+	}
+	.ico{
+		width: 15rem;
+		height: 4rem;
+		margin-top:1rem;
+		display:-webkit-box;
+	}
+	.ico1{
+		-webkit-box-flex:1;	
+	}
+	.ico2{
+		background: url(img/app1.png) no-repeat center 0.75rem #38a4f1;
+		background-size: 0.95rem 1.1rem;
+	}
+	.ico3{
+		background:#8bca11;
+		background: url(img/app2.png) no-repeat center 0.75rem #8bca11;
+		background-size: 0.95rem 1.1rem;
+	}
+	.ico4{
+		background:#ff7404;
+		background: url(img/app3.png) no-repeat center 0.75rem #ff7404;
+		background-size: 0.95rem 1.1rem;
+	}
+	.ico a{
+		width:100%;
+		height: 1.6rem;
+		display:block;
+		font-size: 0.7rem;
+		color: #fff;
+		padding-top:2.5rem;
+		text-align: center;
+	}
+	.enter{
+		margin-top:0.5rem;
+		width: 16rem;
+		height: 2.2rem;
+		background:#f8f8f8;
+	}
+	.enter .enter1{
+		font-size: 0.6rem;
+		color: #000;
+		margin-left:0.45rem;
+		
+
+	}
+	.enter .enter2{
+		font-size: 0.6rem;
+		color: #000;
+		padding-left: 1.2rem;
+
+	}
+	.enter span{
+		float: right;
+	}
+	.enter span a{
+		font-size: 0.6rem;
+		color: #000;
+		padding-right: 1.8rem;
+		background:url(img/sj.png) no-repeat  1.7rem 0.22rem;
+		background-size: 0.5rem 0.3rem;
+	}
+	.foot{
+		width: 16rem;
+		background: #eeeeee;
+		height: 7.5rem;
+		padding-top: 1rem;
+		text-align: center;
+		
+	}
+	.foot a{
+		color: #000;
+		font-size: 0.6rem;
+	}
+	.foot p{
+		text-align: center;
+		font-size: 0.55rem;
+		color: #999999;
+		margin-top: 0.75rem;
+	}
+	</style>
+	<script type="text/javascript">
+	(function(win,doc){
+		function change(){
+		doc.documentElement.style.fontSize=doc.documentElement.clientWidth*20/320+'px';
+		}
+		change();
+		win.addEventListener('resize',change,false);
+	})(window,document);
+	document.addEventListener('DOMContentLoaded',function(){
+		
+		var oUl=document.querySelector('.banner1');
+		var aLi=oUl.children;
+		var iNow=1;
+		var bReady=true;
+		
+		var x=-aLi[0].offsetWidth;
+		oUl.addEventListener('touchstart',function(ev){
+			if(!bReady)return;
+			bReady=false;
+			
+			oUl.style.WebkitTransition='none';
+			var downX=ev.targetTouches[0].clientX;
+			var disX=downX-x;
+			document.addEventListener('touchmove',fnMove,false);
+			document.addEventListener('touchend',fnEnd,false);
+			function fnMove(ev){
+				x=ev.targetTouches[0].clientX-disX;
+				oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';	
+			}
+			
+			function fnEnd(ev){
+				oUl.style.WebkitTransition='0.3s';
+				document.removeEventListener('touchmove',fnMove,false);
+				document.removeEventListener('touchend',fnEnd,false);	
+				
+				var upX=ev.changedTouches[0].clientX;
+				
+				var cw=Math.abs(upX-downX);
+				
+				//走ul 是否切换
+				if(cw>50){
+					
+					if(downX>upX){
+						//左
+						iNow++;
+					}else{
+						//右
+						iNow--;	
+					}
+					x=-iNow*aLi[0].offsetWidth;
+					console.log(aLi[0].offsetWidth);
+					oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';	
+				}else{
+					x=-iNow*aLi[0].offsetWidth;
+					oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';	
+				}
+				
+			}
+			ev.preventDefault();	
+		},false);
+		
+		
+		//运动完毕事件
+		oUl.addEventListener('transitionend',function(){
+			bReady=true;
+			if(iNow==aLi.length-1){
+				//alert('完毕');
+				oUl.style.WebkitTransition='none';
+				iNow=1;
+				x=-iNow*aLi[0].offsetWidth;
+				oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';	
+			}
+			
+			if(iNow==0){
+				//alert('完毕');
+				oUl.style.WebkitTransition='none';
+				iNow=aLi.length-2;
+				x=-iNow*aLi[0].offsetWidth;
+				oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';	
+			}
+		},false);
+	},false);
+	</script>
+</head>
+<body>
+	<header>
+		<a href="javascript:;"></a>
+		<h1></h1>		
+	</header>
+	<section>
+		<div class="banner">
+			<ul class="banner1">
+				<li><img src="img/img2/4.jpg"></li>
+
+				<li><img src="img/img2/1.jpg"></li>
+				<li><img src="img/img2/2.jpg"></li>
+				<li><img src="img/img2/3.jpg"></li>
+				<li><img src="img/img2/4.jpg"></li>
+
+				<li><img src="img/img2/1.jpg"></li>
+			</ul>
+		</div>
+		<ul class="ul1">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div>
+			<ul class="pic">
+				<li>
+					<a href="javascript:;" class="icon icon1"></a>
+					<p><a href="javascript:;">商品</a></p>
+				</li>
+				<li>
+					<a href="javascript:;" class="icon icon2"></a>
+					<p><a href="javascript:;">商品</a></p>
+				</li>
+				<li>
+					<a href="javascript:;" class="icon icon3"></a>
+					<p><a href="javascript:;">商品</a></p>
+				</li>
+				<li>
+					<a href="javascript:;" class="icon icon4"></a>
+					<p><a href="javascript:;">商品</a></p>
+				</li>
+				<li>
+					<a href="javascript:;" class="icon icon5"></a>
+					<p><a href="javascript:;">商品</a></p>
+				</li>
+				<li>
+					<a href="javascript:;" class="icon icon6"></a>
+					<p><a href="javascript:;">商品</a></p>
+				</li>
+				<li>
+					<a href="javascript:;" class="icon icon7"></a>
+					<p><a href="javascript:;">商品</a></p>
+				</li>
+				<li>
+					<a href="javascript:;" class="icon icon8"></a>
+					<p><a href="javascript:;">商品</a></p>
+				</li>
+			</ul>
+		</div>
+		<div class="total">
+			<div class="gar">
+				<h3>聚划算热卖排行</h3>
+				<a href="javascript:;">TOP10</a>
+			</div>
+			<div class="picc">
+				<span class="num">1</span>
+				<img src="img/1.jpg" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="picc">
+				<span class="num2">2</span>
+				<img src="img/2.png" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="picc">
+				<span class="num3">3</span>
+				<img src="img/3.png" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="picc">
+				<span class="num4">4</span>
+				<img src="img/4.png" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="picc">
+				<span class="num5">5</span>
+				<img src="img/5.png" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="picc">
+				<span class="num6">6</span>
+				<img src="img/6.png" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="picc">
+				<span class="num7">7</span>
+				<img src="img/7.png" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="picc">
+				<span class="num8">8</span>
+				<img src="img/8.png" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="picc">
+				<span class="num9">9</span>
+				<img src="img/9.png" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="picc">
+				<span class="num10">10</span>
+				<img src="img/10.png" alt=""/>
+				<div class="price">
+					<p class="sell">已售 68423</p>
+					<p class="sell1">
+						<i class="lose">2.3</i><i>折 &nbsp;¥</i><i class="lose1">299</i>
+					</p>
+					<p class="sell2">¥51</p>
+				</div>
+			</div>
+			<div class="spl">精彩商品 逛起来!</div>
+			<div class="wares">
+				<img src="img/11.png"alt=""/>
+				<ul>
+					<li>服饰</li>
+					<li>配饰</li>
+					<li>美妆</li>
+					<li>服饰</li>
+					<li>服饰</li>
+					<li>服饰</li>
+					<li>配饰</li>
+					<li>配饰</li>
+					<li>配饰</li>
+					<li>美妆</li>
+					<li>美妆</li>
+					<li>美妆</li>
+				</ul>
+			</div>
+			<div class="spl">精彩商品 逛起来!</div>
+			<div class="wares">
+				<img src="img/12.png"alt=""/>
+				<ul>
+					<li>服饰</li>
+					<li>配饰</li>
+					<li>美妆</li>
+					<li>服饰</li>
+					<li>服饰</li>
+					<li>服饰</li>
+					<li>配饰</li>
+					<li>配饰</li>
+					<li>配饰</li>
+					<li>美妆</li>
+					<li>美妆</li>
+					<li>美妆</li>
+				</ul>
+			</div>
+			<div class="spl">品质生活 逛起来!</div>
+			<div class="wares">
+				<img src="img/13.png"alt=""/>
+				<ul>
+					<li>服饰</li>
+					<li>配饰</li>
+					<li>美妆</li>
+					<li>服饰</li>
+					<li>服饰</li>
+					<li>服饰</li>
+					<li>配饰</li>
+					<li>配饰</li>
+					<li>配饰</li>
+					<li>美妆</li>
+					<li>美妆</li>
+					<li>美妆</li>
+				</ul>
+			</div>
+			<div class="spl">品牌折扣 逛起来!</div>
+			<div class="ico">
+				<span class="ico1 ico2"><a href="javascript:;">iOS客户端</a></span>
+				<span class="ico1 ico3"><a href="javascript:;">安卓客户端</a></span>
+				<span class="ico1 ico4"><a href="javascript:;">意见反馈</a></span>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="enter">
+				<a href="javascript:;" class="enter1">登录</a>
+				<a href="javascript:;" class="enter2">注册</a>
+				<span><a href="javascript:;">TOP</a></span>
+			</div>
+			<div class="foot">
+				<a href="javascript:;" >标准版</a>
+				<a href="javascript:;" >电脑版</a>
+				<p>©2013 浙B2-20080224   服务中心</p>
+			</div>
+	</footer>
+</body>
+</html>
